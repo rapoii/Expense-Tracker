@@ -31,8 +31,8 @@ A modern, minimalist Expense Tracker application built with React and Vite, feat
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/expensetracker.git
-    cd expensetracker
+    git clone https://github.com/rapoii/Expense-Tracker.git
+    cd Expense-Tracker
     ```
 
 2.  **Install dependencies**
