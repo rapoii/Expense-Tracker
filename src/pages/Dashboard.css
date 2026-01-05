@@ -1,0 +1,126 @@
+.page-container {
+    padding: 1.5rem;
+    padding-bottom: 90px;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.app-title {
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+.balance-card {
+    /* Override standard card for Balance to be "Hero" */
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.balance-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.balance-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0.5rem 0 2rem;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+}
+
+.balance-stats {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: monospace;
+    /* Technical feel */
+}
+
+/* Ensure these are vibrant */
+.balance-card .text-success {
+    color: var(--accent-green) !important;
+}
+
+.balance-card .text-danger {
+    color: var(--accent-red) !important;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.section-header h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.view-all-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.view-all-link:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-tertiary);
+}

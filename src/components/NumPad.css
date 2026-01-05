@@ -1,0 +1,39 @@
+.numpad-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.numpad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.numpad-btn {
+    background-color: transparent;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-radius: var(--radius-lg);
+    border: 1px solid transparent;
+    transition: background-color 0.1s;
+    user-select: none;
+}
+
+.numpad-btn:active {
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+.numpad-btn-action {
+    color: var(--text-secondary);
+}
+
+.numpad-btn-action:active {
+    color: var(--accent-red);
+}
+
+[data-theme="dark"] .numpad-btn:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}

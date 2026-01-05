@@ -1,0 +1,131 @@
+:root {
+  /* Common Defaults */
+  --font-family: 'Inter', sans-serif;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+
+  /* Common Accents */
+  --accent-green: #2ecc71;
+  --accent-red: #e74c3c;
+
+  /* Mapped for compatibility but monochrome */
+  --accent-purple: #000000;
+  /* Black for Light Mode */
+}
+
+/* Light Theme (Default or explicit) */
+[data-theme="light"] {
+  /* Backgrounds */
+  --bg-primary: #f8f9fa;
+  /* Light Grayish White */
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+
+  /* Text */
+  --text-primary: #18181b;
+  /* Zinc-900 */
+  --text-secondary: #71717a;
+  /* Zinc-500 */
+  --text-tertiary: #a1a1aa;
+  /* Zinc-400 */
+
+  /* Borders & Accents */
+  --border-color: #e4e4e7;
+  /* Zinc-200 */
+  --accent-white: #000000;
+  /* Inverted for light mode buttons */
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* Soft shadow for light mode */
+}
+
+/* Dark Theme (Amoled) */
+[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-primary: #000000;
+  --bg-card: #0a0a0a;
+  --bg-secondary: #111111;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  /* Zinc-400 */
+  --text-tertiary: #52525b;
+  /* Zinc-600 */
+
+  /* Borders & Accents */
+  --border-color: #27272a;
+  /* Zinc-800 */
+  --accent-white: #ffffff;
+  --accent-purple: #ffffff;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: none;
+}
+
+/* Utilities */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-success {
+  color: var(--accent-green) !important;
+}
+
+.text-danger {
+  color: var(--accent-red) !important;
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}

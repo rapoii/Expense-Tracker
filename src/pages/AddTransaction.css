@@ -1,0 +1,82 @@
+.add-transaction {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.type-toggle {
+    display: flex;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-md);
+    padding: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.toggle-btn.active.expense {
+    color: var(--accent-red);
+}
+
+.toggle-btn.active.income {
+    color: var(--accent-green);
+}
+
+.amount-display {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.currency-symbol {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+    vertical-align: top;
+}
+
+.amount-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.section-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.category-section {
+    margin-bottom: 1.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.details-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.date-input-wrapper {
+    max-width: 150px;
+}
+
+.action-buttons {
+    margin-top: 1rem;
+}

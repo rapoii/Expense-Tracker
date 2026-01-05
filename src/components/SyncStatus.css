@@ -1,0 +1,49 @@
+.sync-status {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 0.5px;
+}
+
+.sync-status.visible {
+    transform: translateY(0);
+}
+
+.sync-status.syncing {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.sync-status.error {
+    background-color: var(--bg-card);
+    /* Keep it dark */
+    color: var(--accent-red);
+    border-bottom-color: var(--accent-red);
+}
+
+.sync-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--text-primary);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
